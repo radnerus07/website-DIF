@@ -256,18 +256,19 @@ h4,
 .bgd__wrapper{
     width: 50%;
     position: absolute;
-    top: -42px;
+    top: 50%;
+    transform: translate(0, -50%);
     right: 0;
     
 }
 
 .bgd__box {
     max-width: 660px;
-    height: auto;
+    height: 230px;
     text-align: left;
     background-color: #fff;
     margin: 0 20px 20px 0;
-    padding: 55px 59px;
+    padding: 50px 50px;
     box-shadow: 0 0 60px 10px rgba(13, 37, 62, 0.1);
 }
 
