@@ -278,13 +278,8 @@ h4,
 
 }
 
-.bgd__box:nth-child(2) {
-    
-
-}
-
 .bgd__box:nth-child(3) {
-   
+   margin-bottom: 0;
     
 }
 .bgd-content{
