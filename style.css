@@ -180,7 +180,7 @@ h4,
     background-size: cover;
 }
 
-.text__wrapper {
+.hero__text__middle {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -189,7 +189,7 @@ h4,
     text-align: center;
 }
 
-.text__wrapper .heading__h1--title {
+.hero__text__middle .heading__h1--title {
     text-align: center;
     margin: 0 0 57px 0;
 }
@@ -253,14 +253,18 @@ h4,
     background: url("https://img4.goodfon.com/wallpaper/nbig/e/56/london-england-30-st-mary-axe-the-gherkin-london-angliia-neb.jpg");
     object-fit: cover;
 }
+.bgd__wrapper{
+    width: 50%;
+    position: absolute;
+    top: -42px;
+    right: 0;
+    
+}
 
 .bgd__box {
     max-width: 660px;
     height: auto;
-    position: absolute;
     text-align: left;
-    top: -42px;
-    right: 0;
     background-color: #fff;
     margin: 0 20px 20px 0;
     padding: 55px 59px;
@@ -274,16 +278,16 @@ h4,
 }
 
 .bgd__box:nth-child(2) {
-    top: 210px;
-    right: 0;
+    
+
 }
 
 .bgd__box:nth-child(3) {
-    top: 460px;
-    right: 0;
+   
+    
 }
 .bgd-content{
-    padding: 220px 0 0 0;
+    padding-top: 220px ;
 
 }
 
