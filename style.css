@@ -41,7 +41,7 @@ h4,
 
 }
 
-.navbar__brand__logo img {
+.navbar__brand__logo  {
     width: 132px;
     height: auto;
     text-align: center;
@@ -80,6 +80,8 @@ h4,
     display: inline-block;
     font-weight: 500;
     letter-spacing: 1px;
+    font-size: 20px;
+    padding: 20px 39px;
 }
 
 .btn-primary {
@@ -87,33 +89,18 @@ h4,
     color: #fff;
 }
 
-.btn-glowyello:hover {
+.btn-secondery:hover {
     box-shadow: 0 0 20px 0 rgba(254, 203, 1, 0.4);
 
 }
 
-.btn-glow:hover {
+.btn-primary:hover {
     box-shadow: 0 0 30px 0 rgba(30, 136, 245, 0.4);
 }
 
-.btn-warning {
+.btn-secondery {
     background-color: #ffcc01;
     color: #fff;
-}
-
-.btn-lg {
-    font-size: 20px;
-    padding: 20px 67px;
-}
-
-.btn-md {
-    font-size: 20px;
-    padding: 20px 39px;
-}
-
-.btn-sm {
-    font-size: 18px;
-    padding: 18px 27px;
 }
 
 .navbar {
@@ -145,6 +132,10 @@ h4,
 
 }
 
+.nav__link:hover{
+    color:black;
+}
+
 .nav__link {
     font-size: 18px;
     text-shadow: 30px;
@@ -157,7 +148,7 @@ h4,
     float: left;
 }
 
-.navbar .submit__btn {
+.navbar .navbar__btn{
     margin: 20px 0;
     float: right;
 }
@@ -230,15 +221,16 @@ h4,
 }
 
 .card__image {
+    text-align: center;
     display: inline-block;
 
 }
 
 
-.card__items img {
+.card__items svg {
     height: auto;
+    
     width: 50px;
-    color: #fff;
     padding: 56px 0 0 0;
 }
 
@@ -294,6 +286,7 @@ h4,
 .templates {
     text-align: center;
     margin: 0 0 95px 0;
+    border-bottom: solid 1px #eeeeee ;
 }
 
 .subhead {
@@ -336,7 +329,7 @@ h4,
 
 }
 
-.bg-warning {
+.bg-secondery {
     box-shadow: 0 2px 30px 0 rgba(255, 204, 1, 0.3);
     background-color: #ffcc01;
 }
@@ -357,6 +350,7 @@ h4,
     vertical-align: middle;
 }
 .bx-fnt{
+    margin-bottom: 140px;
     font-size: 0;
 }
 
@@ -434,7 +428,7 @@ ul {
 }
 
 .foot__content {
-    height: 212px;
+    
     width: auto;
     background-color: #fff;
 }
@@ -466,4 +460,9 @@ ul {
 .column img {
     height: auto;
     width: 132px;
+}
+
+.foot__link:hover{
+    color: black;
+    opacity: 0.6;
 }
