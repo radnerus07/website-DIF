@@ -38,7 +38,7 @@ h4,
 .card__title  {
     font-size: 28px;
     font-weight: 300;
-    margin: 33px 0 4px 0;
+    margin: 0sd 0 4px 0;
 
 }
 
@@ -229,6 +229,7 @@ h4,
     text-align: center;
     display: inline-block;
     position: relative;
+    margin-bottom: 33px;
 }
 
 
