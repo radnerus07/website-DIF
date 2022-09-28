@@ -35,9 +35,10 @@ h2,
 }
 
 h4,
-.card__title .hd {
+.card__title  {
     font-size: 28px;
     font-weight: 300;
+    margin: 33px 0 4px 0;
 
 }
 
@@ -48,11 +49,9 @@ h4,
 
 }
 
-.card__items .hd {
-    margin: 33px 0 4px 0;
-}
 
-.hd-primary {
+
+.hd-dark:hover {
     color: #1e88f5;
 }
 
@@ -196,9 +195,15 @@ h4,
     width: 150px;
     border-radius: 100px;
     text-align: center;
+    
 }
 
-.crkl-primary {
+.card__image:hover svg{
+    background-color: #1e88f5;
+    fill:#fff;
+
+}
+.circle:hover{
     background-color: #1e88f5;
 }
 
@@ -223,19 +228,22 @@ h4,
 .card__image {
     text-align: center;
     display: inline-block;
-
+    position: relative;
 }
 
 
 .card__items svg {
     height: auto;
-    
     width: 50px;
-    padding: 56px 0 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
 }
 
 .bgd {
-    margin: 0 0 100px 0;
+    margin: 0 0 150px 0;
     position: relative;
 }
 
@@ -283,7 +291,7 @@ h4,
     margin: 0 0 30px 0;
 }
 
-.templates {
+.posters {
     text-align: center;
     margin: 0 0 95px 0;
     border-bottom: solid 1px #eeeeee ;
@@ -293,7 +301,7 @@ h4,
     margin: 19px 0 0px 0;
 }
 
-.templates__box {
+.posters__box {
     font-size: 0;
     height: auto;
     padding: 0 0 60px 0;
@@ -311,11 +319,11 @@ h4,
     display: block;
     clear: both;
 }
-.templates__heading{
+.posters__heading{
     margin-bottom:  95px;
 }
 
-.templates__priceitem {
+.posters__priceitem {
     padding: 56px 0px 27px 0px;
     box-shadow: 0 2px 30px 0 rgba(30, 136, 245, 0.3);
     background-color: #1e88f5;
@@ -334,7 +342,7 @@ h4,
     background-color: #ffcc01;
 }
 
-.templates__price__tag {
+.posters__price__tag {
     font-size: 60px;
     font-weight: 600;
     color: #fff;
@@ -344,7 +352,7 @@ h4,
     letter-spacing: 6px;
 }
 
-.templates__priceunit {
+.posters__priceunit {
 
     font-size: 14px;
     vertical-align: middle;
@@ -354,7 +362,7 @@ h4,
     font-size: 0;
 }
 
-.templates__paymode {
+.posters__paymode {
     font-size: 18px;
     line-height: 30px;
     color: #fff;
@@ -363,64 +371,57 @@ h4,
     text-align: center;
 }
 
-.templates__lists {
+.posters__lists {
     padding: 0 20px 60px 60px;
 }
-.templates__lists li{
+.posters__lists li{
     position: relative;
     padding-left: 40px; 
 }
 
-.templates__box .templates__lists,
+.posters__box .posters__lists,
 ul {
     text-align: left;
     list-style: none;
 }
 
-.templates__lists--items {
+.posters__lists--items {
     margin: 34px 0 0 0;
     font-size: 22px;
     line-height: 30px;
     font-weight: 300;
 }
 
-.templates__box .templates__lists li:before {
-    content: '✔';
+.right .posters__lists li:before {
+    content: url("tick.svg");
+    height: 30px;
+    width: 30px;
     position: absolute;
     left: 0;
     margin-right: 30px;
-    font-size: 30px;
-    
-   
+    font-size: 30px;  
 }
-
-.yl:before {
-    color: #ffcc01;
-}
-.bl:before{
-    color: #1e88f5;
-    
+.left .posters__lists li:before {
+    content: url("tickbl.svg");
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 0;
+    margin-right: 30px;
+    font-size: 30px;  
 }
 
 .left {
   margin-right: 40px;
 }
 
-.sm-clk {
+.card__items .card__image a::after {
+    content: url("plus-circle-twotone.svg"); 
+    stroke: #0d253e;
     height: 40px;
     width: 40px;
-    border-radius: 100px;
-    text-align: center;
-    background-color: #ffcc01;
     position: absolute;
-    left: 110px;
-    color: #fff;
-    font-size: 30px;
-}
-
-.colage {
-    display: inline-block;
-    position: relative;
+    left: 110px;  
 }
 
 .bg-circle {
@@ -466,3 +467,4 @@ ul {
     color: black;
     opacity: 0.6;
 }
+
