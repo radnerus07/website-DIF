@@ -95,11 +95,7 @@ h4,
 }
 
 .navigation {
-    display: none;
-}
-
-.nav-toggle {
-    display: none;
+    display: block;
 }
 
 .nav-toggle-label {
@@ -107,6 +103,7 @@ h4,
     right: 10%;
     top: 50%;
     transform: translate(0, -50%);
+    display: none;
 }
 
 .nav-toggle-label span,
@@ -191,9 +188,6 @@ h4,
     clear: both;
 }
 
-.hero {
-    margin: 0 0 131px 0;
-}
 
 .banner__image {
     position: relative;
@@ -214,12 +208,11 @@ h4,
 }
 
 .hero__text__middle .heading__h1--title {
-    text-align: center;
+   
     margin: 0 0 57px 0;
 }
 
 .text-center {
-    margin-bottom: 73px;
     text-align: center;
 }
 
@@ -248,11 +241,11 @@ h4,
     float: left;
     list-style: none;
     text-align: center;
-    margin-bottom: 93px;
+    margin-top: 93px;
 }
 
 .cards {
-    padding: 20px 20px 40px;
+    padding: 131px 20px 93px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -280,9 +273,9 @@ h4,
 
 .bgd-img {
     height: 645px;
-    width: auto;
-    background: url("https://img4.goodfon.com/wallpaper/nbig/e/56/london-england-30-st-mary-axe-the-gherkin-london-angliia-neb.jpg");
-    object-fit: cover;
+    width: 100%;
+    background: url("https://img4.goodfon.com/wallpaper/nbig/e/56/london-england-30-st-mary-axe-the-gherkin-london-angliia-neb.jpg") no-repeat center/cover;
+    
 }
 
 .bgd__wrapper {
@@ -314,6 +307,7 @@ h4,
 
 .bgd-content {
     padding-top: 220px;
+    margin-bottom: 20px;
 }
 
 .bgd__left_content {
@@ -353,8 +347,6 @@ h4,
 
 .posters__priceitem {
     padding: 56px 0px 27px 0px;
-    box-shadow: 0 2px 30px 0 rgba(30, 136, 245, 0.3);
-    background-color: #1e88f5;
     color: #fff;
     text-align: center;
 }
@@ -385,7 +377,7 @@ h4,
 }
 
 .bx-fnt {
-    margin-bottom: 140px;
+    
     font-size: 0;
 }
 
@@ -399,7 +391,7 @@ h4,
 }
 
 .posters__lists {
-    padding: 0 20px 60px 60px;
+    padding: 34px 20px 30px 60px;
 }
 
 .posters__lists li {
@@ -414,7 +406,7 @@ ul {
 }
 
 .posters__lists--items {
-    margin: 34px 0 0 0;
+    margin:  0 0 34px 0;
     font-size: 22px;
     line-height: 30px;
     font-weight: 300;
@@ -506,14 +498,15 @@ ul {
 
     h1,
     .heading__h1 {
-        font-size: 38px;
-        line-height: 45px;
+        font-size: 30px;
+        line-height: 35px;
+       
     }
-
     .hero__text__middle .heading__h1--title {
-        text-align: center;
+        
         margin: 0 0 47px 0;
     }
+
 
     h2,
     .heading__h2 {
@@ -526,8 +519,8 @@ ul {
     }
 
     .paragraph__p {
-        font-size: 22px;
-        line-height: 1.2;
+        font-size: 18px;
+        line-height: 1.0;
     }
 
     .btn {
@@ -543,7 +536,12 @@ ul {
     .posters__box {
         width: calc(100% - 40px);
         display: inline-block;
+        padding: 0 0 40px 0;
     }
+    .posters__priceitem {
+        padding: 36px 0px 17px 0px;
+    }
+    
 
     .right {
         max-width: 550px;
@@ -555,9 +553,30 @@ ul {
         margin-bottom: 20px;
     }
 
-    .bgd__left_content {
-        font-size: 34px;
-        line-height: 1.36;
+    
+    .bgd-content {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .bgd__box {
+        max-width: 660px;
+        height: 180px;
+        margin: 0 10px 20px 50px;
+        padding: 30px;
+
+    }
+    .bgd__wrapper {
+        position: relative;
+        width: 100%;
+        top: 35%;
+        padding: 0 120px 0 120px;
+    }
+
+
+    .bgd-img {
+        height: 845px;
+
     }
 
     .posters__price__tag {
@@ -584,28 +603,21 @@ ul {
         opacity: 20%;
         margin: 0 90px 20px 0;
     }
-}
-
-@media screen and (min-width: 1024px) {
     .nav-toggle-label {
-        display: none;
+        display: block;
     }
 
     .navigation {
-        display: block;
+        display: none;
     }
 }
 
+
 @media screen and (max-width: 768px) {
 
-    h1,
-    .heading__h1 {
-        font-size: 30px;
-        line-height: 35px;
-    }
+  
 
     .hero__text__middle .heading__h1--title {
-        text-align: center;
         margin: 0 0 37px 0;
     }
 
@@ -614,26 +626,18 @@ ul {
         font-size: 28px;
     }
 
-    h4,
-    .card__title {
-        font-size: 18px;
-    }
-
-    .paragraph__p {
-        font-size: 18px;
-        line-height: 1;
-    }
+  
 
     .btn {
         letter-spacing: 1px;
-        font-size: 15px;
-        padding: 10px 29px;
+        font-size: 10px;
+        padding: 10px 12px;
     }
 
 
     .card__items {
         width: 100%;
-        margin-bottom: 60px;
+        margin-top: 60px;
     }
 
     .posters__box {
@@ -642,19 +646,16 @@ ul {
     }
 
     .right {
-        max-width: 550px;
+        max-width: 450px;
     }
 
     .left {
-        max-width: 550px;
+        max-width: 450px;
         margin-right: 0px;
         margin-bottom: 20px;
     }
 
-    .bgd__left_content {
-        font-size: 30px;
-        line-height: 1.36;
-    }
+   
 
     .posters__price__tag {
         font-size: 40px;
@@ -686,9 +687,8 @@ ul {
     }
 
     .bgd__wrapper {
-        position: relative;
-        width: 100%;
-        top: 35%;
+        
+        padding: 0 20px 0 20px ;
     }
 
     .foot__list {
@@ -708,7 +708,7 @@ ul {
     .bgd__box {
         max-width: 660px;
         height: 180px;
-        margin: 20px 20px 0 20px;
+        margin: 0 20px 20px 20px;
         padding: 30px;
 
     }
@@ -722,12 +722,12 @@ ul {
     }
 
     .posters__lists {
-        padding: 0 20px 60px 20px;
+        padding: 20px 20px 20px 20px;
 
     }
 
     .posters__lists--items {
-        font-size: 26px;
+        font-size: 18px;
     }
 
 }
