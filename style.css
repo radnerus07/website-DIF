@@ -40,12 +40,6 @@ h4,
     margin: 0 0 4px 0;
 }
 
-.navbar__brand__logo {
-    width: 132px;
-    height: auto;
-    text-align: center;
-}
-
 .hd-dark:hover {
     color: #1e88f5;
 }
@@ -97,7 +91,9 @@ h4,
 .navigation {
     display: block;
 }
-
+.navbar__brand__logo a{
+ display: inline-block;
+}
 .nav-toggle-label {
     position: absolute;
     right: 10%;
@@ -175,6 +171,7 @@ h4,
 
 .navbar__brand__logo {
     float: left;
+    margin: 0 20px;
 }
 
 .navbar .navbar__btn {
@@ -329,9 +326,8 @@ h4,
     height: auto;
     padding: 0 0 60px 0;
     border-radius: 4px;
-    box-shadow: 0 20px 60px 10px rgba(13, 37, 62, 0.05);
-    border: solid 1px #eee;
-    width: calc((100% - 40px) / 2);
+    border: solid 1px #eeeeee;
+    width: calc((100% - 60px) / 2);
     display: inline-block;
 }
 
@@ -377,7 +373,7 @@ h4,
 }
 
 .bx-fnt {
-    
+    background-color: #feffff;
     font-size: 0;
 }
 
@@ -433,16 +429,26 @@ ul {
 }
 
 .left {
-    margin-right: 40px;
+    max-width: 510px;
+    margin-right: 60px;
 }
-
+.right{
+    max-width: 510px;
+}
 .card__items .card__image a::after {
-    content: url("plus-circle-twotone.svg");
-    stroke: #0d253e;
+    content: "+";
     height: 40px;
     width: 40px;
     position: absolute;
     left: 110px;
+    background-color: #ffcc01;
+    font-size: 25px;
+    padding-top: 3px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 20px 0 rgb(255 204 1 / 40%);
 }
 
 .bg-circle {
@@ -537,21 +543,19 @@ ul {
     }
 
     .posters__box {
-        width: calc(100% - 40px);
+        width: calc(100% - 60px);
         display: inline-block;
         padding: 0 0 40px 0;
     }
     .posters__priceitem {
-        padding: 36px 0px 17px 0px;
+        padding: 26px 0px 17px 0px;
     }
-    
-
-    .right {
-        max-width: 550px;
+    .posters__lists--items{
+        margin-bottom: 20px;
     }
 
     .left {
-        max-width: 550px;
+        
         margin-right: 0px;
         margin-bottom: 20px;
     }
@@ -613,6 +617,10 @@ ul {
     .navigation {
         display: none;
     }
+    .posters__lists {
+        padding: 20px 20px 20px 20px;
+
+    }
 }
 
 
@@ -647,17 +655,6 @@ ul {
         width: calc(100% - 40px);
         display: inline-block;
     }
-
-    .right {
-        max-width: 450px;
-    }
-
-    .left {
-        max-width: 450px;
-        margin-right: 0px;
-        margin-bottom: 20px;
-    }
-
    
 
     .posters__price__tag {
@@ -709,10 +706,9 @@ ul {
     }
 
     .bgd__box {
-        max-width: 660px;
-        height: 180px;
+        
         margin: 0 20px 20px 20px;
-        padding: 30px;
+        padding: 20px;
 
     }
 
@@ -723,14 +719,8 @@ ul {
         margin-left: 40px;
 
     }
-
-    .posters__lists {
-        padding: 20px 20px 20px 20px;
-
-    }
-
-    .posters__lists--items {
-        font-size: 18px;
+    .posters__lists--items{
+        margin-bottom: 10px;
     }
 
 }
